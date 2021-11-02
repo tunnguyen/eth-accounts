@@ -1,0 +1,53 @@
+.account-card {
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  font-size: 12px;
+
+  &__order {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background: black;
+    color: white;
+  }
+
+  
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    @media screen and (max-width: 500px) {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      flex-direction: row;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      margin: 5px 0;
+      padding: 4px 8px;
+      font-size: 12px;
+
+      @media screen and (max-width: 500px) {
+        margin: 0 0 0 5px;
+      }
+    }
+
+    button span {
+      margin-left: 5px;
+    }
+  }
+}
